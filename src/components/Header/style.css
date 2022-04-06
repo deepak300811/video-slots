@@ -1,0 +1,78 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background: #000000df;
+  color: #fff;
+  width: 100%;
+  z-index: 1;
+  -webkit-box-shadow: -1px 3px 19px 1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px 3px 19px 1px rgba(0, 0, 0, 0.37);
+  box-shadow: -1px 3px 19px 1px rgba(0, 0, 0, 0.37);
+}
+.header-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  padding: 0.3rem 0rem 0.3rem 0.5rem;
+  width: 55px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.input-field.filter {
+  width: unset;
+  padding: 0.5rem;
+  width: 80%;
+}
+i.disabled {
+  color: #787878;
+  cursor: unset;
+}
+.right {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.next-prev {
+  width: 20%;
+  display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .right {
+    width: 50%;
+  }
+  .left {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .header-items {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left {
+    width: unset;
+    margin-bottom: 1rem;
+  }
+  .right {
+    width: unset;
+  }
+
+  .input-field {
+    padding: 0.1rem 0rem 0.1rem 0.4rem;
+  }
+  .input-field.filter {
+    padding: 0.3rem;
+  }
+}

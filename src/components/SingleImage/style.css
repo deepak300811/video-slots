@@ -1,0 +1,33 @@
+.single-image > img {
+  width: 100%;
+  max-width: 367px;
+  -webkit-box-shadow: -1px 3px 19px 1px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: -1px 3px 19px 1px rgba(0, 0, 0, 0.37);
+  box-shadow: -1px 3px 19px 1px rgba(0, 0, 0, 0.37);
+}
+.single-image {
+  margin: auto;
+  position: relative;
+}
+.detail-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.448);
+}
+.detail-section > p {
+  font-size: 20px;
+}
+.author-text {
+  text-overflow: ellipsis;
+}
+@media (max-width: 767px) {
+  .detail-section > p {
+    font-size: 16px;
+  }
+}
