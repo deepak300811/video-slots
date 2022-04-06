@@ -14,6 +14,7 @@
 1. A App conponent holds all the view of the application. View the application has two parts - 1. Header and 2. ImagesContainer.
 2. Whole app is devided into components, all components are available in a separate components folder. Components used in this webapp are Error, Header, Error, ImagesContainer, Loader, and SingleImage. 
 3. Header is a component where imagesPerPage field and search field is present, the change in inputs causes the api to be called and data is otained in App main container then this data is fed to ImagesContainer component which generates the grid or list of SingleImage components as per the user requirement.
+4. Have not used any state management system because of the scope of this project. All the state have been managed from the App component for simplicity and also because of the time constraints. 
 
 # Features Developed🙋🏻‍♂️
 
