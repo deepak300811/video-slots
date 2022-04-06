@@ -84,7 +84,11 @@ function App() {
 
   useEffect(() => {
     setIsError(false);
-    getImages();
+    setLoading(true);
+    const timer = setTimeout(() => {
+      getImages();
+    }, 600);
+    return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [authorFilter]);
 
